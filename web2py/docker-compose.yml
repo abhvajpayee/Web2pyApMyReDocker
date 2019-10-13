@@ -1,0 +1,11 @@
+version: '3.1'
+services:
+  web2py:
+    build: .
+    image: abhishek/web2py:debian
+    ports:
+      - 8000:8000
+    environment:
+      - WEB2PY_PASSWORD=password
+      - WEB2PY_ADMIN_SECURITY_BYPASS=true
+  
